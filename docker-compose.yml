@@ -1,0 +1,11 @@
+
+services:
+  poker-react:
+    build: .
+    volumes:
+      - .:/usr/src/poker-react
+      - /usr/src/poker-react/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
